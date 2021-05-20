@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+      
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+      
+        <link type="text/css" rel="stylesheet" href="/css/main.css">
+      
+        <title>AR Prototype - Cart</title>
+      
+      </head>
+<body class="font-usage">
+    <div id="header-container" class="flex flex-col px-6 mt-10 w-screen">
+        <div class="flex justify-between items-center w-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+                <a href="index.html">
+                <div class="rounded w-40 h-12 bg-gray-600"></div>
+            </a>
+              <a href="cart.html"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg></a>
+        </div>
+        <div class="flex text-gray-300">
+            <input type="text" placeholder="Doorzoek de hele winkel" class="rounded border box-border border-gray-300 my-3 p-3 w-full">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 absolute right-3 mr-6 mt-6" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+            </svg>
+        </div>
+    </div>
+    <div class="w-screen bg-gray-300 h-1px"></div>
+    <div class="mt-6 mb-8 px-6">
+        <p class="text-3xl font-bold">Winkelwagen</p>
+    </div>
+    <div class="w-screen bg-gray-300 h-1px"></div>
+    <div class="p-6">
+        <a href="index.html">
+            <div class="flex mb-6">
+                <img src="/img/armchair.png" alt="Armchair" class="w-16">
+                <p class="ml-4">Topform Fauteuil</p>
+            </div>
+        </a>
+        <div class="flex justify-between">
+            <div class="h-20 flex flex-col justify-between">
+                <p>Prijs</p>
+                <p class="font-bold">&euro;499,00</p>
+            </div>
+            <div class="h-20 flex flex-col justify-between items-center">
+                <p>Aantal</p>
+                <input type="number" value="1" class="qty-input rounded text-center border border-gray-300 p-3" onClick="this.select();">
+            </div>
+            <div class="h-20 flex flex-col justify-between items-end">
+                <p>Subtotaal</p>
+                <p class="font-bold">&euro;499,00</p>
+            </div>
+        </div>
+    </div>
+    <div class="w-screen bg-gray-300 h-1px"></div>
+    <div class="flex justify-center">
+        <button class="text-gray-700 bg-white rounded py-3 px-4 font-medium box-border flex shadow border border-gray-300 mt-3 mb-6">Update winkelwagen</button>
+    </div>
+    <div class="w-screen bg-gray-300 h-1px"></div>
+    <div class="pt-3 pb-6 px-6 bg-gray-200">
+        <div class="flex justify-between mb-2">
+            <p>Subtotaal</p>
+            <p>&euro;499,00</p>
+        </div>
+        <div class="w-full bg-gray-300 h-1px"></div>
+        <div class="flex justify-between my-2">
+            <p>BTW</p>
+            <p>&euro;86,60</p>
+        </div>
+        <div class="w-full bg-gray-300 h-1px"></div>
+        <div class="flex justify-between my-2 font-bold text-xl">
+            <p>Totaal (incl. BTW)</p>
+            <p>&euro;499,00</p>
+        </div>
+        <div class="w-full bg-gray-300 h-1px"></div>
+        <div class="flex justify-between my-2 font-bold text-gray-400">
+            <p>Totaal (excl. BTW)</p>
+            <p>&euro;412,40</p>
+        </div>
+        <button class="text-white bg-gray-700 rounded py-3 px-4 font-medium shadow mt-6 w-full flex justify-center">Ga door naar afrekenen</button>
+    </div>
+    <div id="footer-container" class="p-6 flex flex-col items-center bg-gray-600">
+        <div class="flex">
+            <div class="rounded-full bg-white w-12 h-12"></div>
+            <div class="rounded-full bg-white w-12 h-12 mx-3"></div>
+            <div class="rounded-full bg-white w-12 h-12"></div>
+        </div>
+        <p class="mt-3 text-center text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+</body>
+</html>
